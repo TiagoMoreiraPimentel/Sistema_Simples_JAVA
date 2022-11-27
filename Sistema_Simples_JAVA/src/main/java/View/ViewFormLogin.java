@@ -111,7 +111,11 @@ public class ViewFormLogin extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
         if(txtLogin.getText().equals("tiago")&&txtSenha.getText().equals("123456")){
+            
             JOptionPane.showMessageDialog(null, "Bem vindo!");
+            ViewFormPrincipal viewFormPrincipal = new ViewFormPrincipal();
+            viewFormPrincipal.setVisible(true);
+            
         }
         else{
             
