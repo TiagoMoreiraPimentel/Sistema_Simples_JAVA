@@ -84,6 +84,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
             
             ViewFormPrincipal viewFormPrincipal = new ViewFormPrincipal();
             viewFormPrincipal.setVisible(true);
+            dispose();
             
         }
         else{

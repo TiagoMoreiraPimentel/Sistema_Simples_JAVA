@@ -34,6 +34,7 @@ public class ViewFormPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Tela Principal");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nitro\\Desktop\\SERVIDOR GITHUB\\Sistema_Simples_JAVA\\Imagens\\fundoazul.jpg")); // NOI18N
