@@ -50,6 +50,12 @@ public class ViewFormLogin extends javax.swing.JFrame {
 
         jLabel3.setText("Login");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 157, 37, -1));
+
+        txtSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSenhaActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 256, 150, -1));
         getContentPane().add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 179, 150, -1));
 
@@ -105,6 +111,28 @@ public class ViewFormLogin extends javax.swing.JFrame {
         System.exit(0);
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaActionPerformed
+        
+        if(txtLogin.getText().equals("tiago")&&txtSenha.getText().equals("123456")){
+            
+            // Envia uma mensagem de Boas vindas ao realizar o login
+            JOptionPane.showMessageDialog(null, "Bem vindo!");
+            
+            // estancia a janela principal
+            ViewFormPrincipal viewFormPrincipal = new ViewFormPrincipal();
+            // seta a janela principal como visivel
+            viewFormPrincipal.setVisible(true);
+            // codigo dispose(), que esconde a janela de login após chamar a tela principal
+            dispose();
+            
+        }
+        else{
+            // mensagem se caso o login e senha estiver incorreto
+            JOptionPane.showMessageDialog(null, "Acesso negado!");
+        }
+        
+    }//GEN-LAST:event_txtSenhaActionPerformed
 
     /**
      * @param args the command line arguments

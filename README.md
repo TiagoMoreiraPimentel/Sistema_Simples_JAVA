@@ -5,3 +5,4 @@
 ## Primeiros passos:
 
 - Tela de login
+- Tela Principal
