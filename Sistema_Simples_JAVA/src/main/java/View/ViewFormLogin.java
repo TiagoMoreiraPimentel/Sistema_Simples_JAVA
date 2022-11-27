@@ -28,23 +28,30 @@ public class ViewFormLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         txtSenha = new javax.swing.JPasswordField();
         txtLogin = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela de Login");
         setResizable(false);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nitro\\Desktop\\SERVIDOR GITHUB\\Sistema_Simples_JAVA\\Imagens\\loginmanager_10029.png")); // NOI18N
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setText("Senha");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 234, 37, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nitro\\Desktop\\SERVIDOR GITHUB\\Sistema_Simples_JAVA\\Imagens\\loginmanager_10029.png")); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 23, -1, -1));
 
         jLabel3.setText("Login");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 157, 37, -1));
+        getContentPane().add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 256, 150, -1));
+        getContentPane().add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 179, 150, -1));
 
         jButton1.setText("Entrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -52,6 +59,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 321, -1, -1));
 
         jButton2.setText("Sair");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -59,50 +67,10 @@ public class ViewFormLogin extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 321, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(75, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(100, 100, 100))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(txtSenha)
-                                .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(71, 71, 71))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1)
-                .addGap(38, 38, 38)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap(28, Short.MAX_VALUE))
-        );
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\nitro\\Desktop\\SERVIDOR GITHUB\\Sistema_Simples_JAVA\\Imagens\\fundoazul.jpg")); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 380));
 
         pack();
         setLocationRelativeTo(null);
@@ -113,6 +81,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
         if(txtLogin.getText().equals("tiago")&&txtSenha.getText().equals("123456")){
             
             JOptionPane.showMessageDialog(null, "Bem vindo!");
+            
             ViewFormPrincipal viewFormPrincipal = new ViewFormPrincipal();
             viewFormPrincipal.setVisible(true);
             
@@ -171,6 +140,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField txtLogin;
     private javax.swing.JPasswordField txtSenha;
     // End of variables declaration//GEN-END:variables
