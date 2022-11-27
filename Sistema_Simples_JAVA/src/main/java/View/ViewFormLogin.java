@@ -37,6 +37,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Tela de Login");
         setResizable(false);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nitro\\Desktop\\SERVIDOR GITHUB\\Sistema_Simples_JAVA\\Imagens\\loginmanager_10029.png")); // NOI18N
@@ -99,6 +100,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
