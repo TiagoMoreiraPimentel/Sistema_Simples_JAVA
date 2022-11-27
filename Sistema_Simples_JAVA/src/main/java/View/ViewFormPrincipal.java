@@ -48,6 +48,7 @@ public class ViewFormPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nitro\\Desktop\\SERVIDOR GITHUB\\Sistema_Simples_JAVA\\Imagens\\usuarios_principal.png")); // NOI18N
         jMenu2.setText("Usuarios");
         jMenuBar1.add(jMenu2);
 
@@ -61,7 +62,7 @@ public class ViewFormPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 362, Short.MAX_VALUE)
+            .addGap(0, 361, Short.MAX_VALUE)
         );
 
         pack();
