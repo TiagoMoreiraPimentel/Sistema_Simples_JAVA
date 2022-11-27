@@ -78,17 +78,22 @@ public class ViewFormLogin extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
+        // Validando o usuario e senha através do IF
         if(txtLogin.getText().equals("tiago")&&txtSenha.getText().equals("123456")){
             
+            // Envia uma mensagem de Boas vindas ao realizar o login
             JOptionPane.showMessageDialog(null, "Bem vindo!");
             
+            // estancia a janela principal
             ViewFormPrincipal viewFormPrincipal = new ViewFormPrincipal();
+            // seta a janela principal como visivel
             viewFormPrincipal.setVisible(true);
+            // codigo dispose(), que esconde a janela de login após chamar a tela principal
             dispose();
             
         }
         else{
-            
+            // mensagem se caso o login e senha estiver incorreto
             JOptionPane.showMessageDialog(null, "Acesso negado!");
         }
         
@@ -96,6 +101,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
+        // fecha o sistema imediatamente
         System.exit(0);
         
     }//GEN-LAST:event_jButton2ActionPerformed
