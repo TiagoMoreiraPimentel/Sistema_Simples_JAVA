@@ -62,6 +62,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
         getContentPane().add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 179, 150, -1));
 
         jButton1.setText("Entrar");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -70,6 +71,7 @@ public class ViewFormLogin extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 321, -1, -1));
 
         jButton2.setText("Sair");
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
